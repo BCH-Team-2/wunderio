@@ -2,7 +2,7 @@ _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
 uuid: 237a604c-9b81-40e0-90f0-4d08f35893d1
-name: 'Drush Site-Install'
+name: 'Team Two Wunder site'
 mail: admin@example.com
 slogan: ''
 page:

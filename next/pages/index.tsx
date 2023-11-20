@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import { DrupalNode } from "next-drupal";
+import { DrupalNode, DrupalTaxonomyTerm } from "next-drupal";
 import { useTranslation } from "next-i18next";
 
 import { ArticleTeasers } from "@/components/article-teasers";
@@ -21,7 +21,6 @@ import { Frontpage, validateAndCleanupFrontpage } from "@/lib/zod/frontpage";
 
 import { Divider } from "@/ui/divider";
 
-
 interface IndexPageProps extends LayoutProps {
   frontpage: Frontpage | null;
   promotedArticleTeasers: ArticleTeaser[];
@@ -36,20 +35,20 @@ export default function IndexPage({
   return (
     <>
       <Meta title={frontpage?.title} metatags={frontpage?.metatag} />
-      <div className="grid gap-4">
+      {/* <div className="grid gap-4">
         {frontpage?.field_content_elements?.map((paragraph) => (
           <Paragraph paragraph={paragraph} key={paragraph.id} />
         ))}
-      </div>
-      <Divider className="max-w-4xl" />
-      <ContactForm />
-      <Divider className="max-w-4xl" />
-      <ArticleTeasers
+      </div> */}
+      {/* <Divider className="max-w-4xl" /> */}
+      {/* <ContactForm /> */}
+      {/* <Divider className="max-w-4xl" /> */}
+      {/* <ArticleTeasers
         articles={promotedArticleTeasers}
         heading={t("promoted-articles")}
       />
-      <ContactList />
-      <LogoStrip />
+      <ContactList /> */}
+      {/* <LogoStrip /> */}
     </>
   );
 }

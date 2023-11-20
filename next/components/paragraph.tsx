@@ -6,7 +6,8 @@ import { ParagraphImage } from "@/components/paragraph--image";
 import { ParagraphLinks } from "@/components/paragraph--links";
 import { ParagraphListingArticles } from "@/components/paragraph--listing-articles";
 import { ParagraphText } from "@/components/paragraph--text";
-import { Paragraph} from "@/lib/zod/paragraph";
+import { Paragraph } from "@/lib/zod/paragraph";
+
 import { ParagraphTestimonials } from "./paragraph--testimonials";
 import { ParagraphHeadingSection } from "@/components/paragraph--heading-section";
 import { ParagraphLinkService } from "./paragraph--link-service";

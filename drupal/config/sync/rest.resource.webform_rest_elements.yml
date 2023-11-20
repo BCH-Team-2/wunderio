@@ -1,0 +1,21 @@
+uuid: e080807d-3593-4d37-b8c3-bd7bad6317ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - simple_oauth
+    - user
+    - webform_rest
+id: webform_rest_elements
+plugin_id: webform_rest_elements
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+    - xml
+  authentication:
+    - oauth2
+    - cookie

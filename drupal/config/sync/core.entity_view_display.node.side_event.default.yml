@@ -1,0 +1,49 @@
+uuid: d5d2c818-7673-45f0-b801-92e1e3834781
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.side_event.body
+    - field.field.node.side_event.field_content_elements
+    - field.field.node.side_event.field_main_event
+    - node.type.side_event
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.side_event.default
+targetEntityType: node
+bundle: side_event
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_content_elements:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_main_event:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

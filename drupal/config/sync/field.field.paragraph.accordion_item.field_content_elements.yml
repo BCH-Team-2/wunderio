@@ -21,7 +21,7 @@ bundle: accordion_item
 label: 'Content elements'
 description: 'Add one or more paragraphs to display in this accordion item.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

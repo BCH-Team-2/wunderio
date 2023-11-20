@@ -1,0 +1,28 @@
+uuid: 7ee08782-464c-44ed-99de-3f3b4580bb16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.side_event
+  module:
+    - text
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.side_event.body
+field_name: body
+entity_type: node
+bundle: side_event
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

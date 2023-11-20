@@ -7,9 +7,9 @@ import { FileAttachments, Image, Video } from "@/lib/zod/paragraph";
 
 interface MediaProps {
   media?:
-  | Image["field_image"]
-  | Video["field_video"]
-  | FileAttachments["field_file_attachments"];
+    | Image["field_image"]
+    | Video["field_video"]
+    | FileAttachments["field_file_attachments"];
   priority?: boolean;
 }
 

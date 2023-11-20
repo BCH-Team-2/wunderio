@@ -96,6 +96,6 @@ export function CareersForm() {
         </div>
         <Button type="submit">{t("form-careers-submit")}</Button>
       </>
-    </form >
+    </form>
   );
 }

@@ -1,0 +1,29 @@
+uuid: b3275614-5bf7-4573-be44-1d1dc16ec197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_registration
+    - node.type.event
+  module:
+    - tmgmt_content
+    - webform
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: node.event.field_event_registration
+field_name: field_event_registration
+entity_type: node
+bundle: event
+label: 'Event registration form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -1,6 +1,8 @@
 {
   "brand-logos": "Varumärkeslogotyper",
   "homepage-link-sr": "Hemsida",
+  "homepage-link": "Hemsida",
+  "careers-link": "Karriär",
   "menu-back": "Tillbaka",
   "menu": "Meny",
   "menu-toggle": "Visa/dölj meny",
@@ -79,5 +81,7 @@
   "password-updated-login-below": "Ditt lösenord har uppdaterats. Du kan logga in med formuläret nedan.",
   "password-reset-check-your-email": "Om {{email}} var associerad med ett faktiskt konto, kontrollera din e-post efter en länk för att återställa ditt lösenord.",
   "reset-your-password": "Återställ ditt lösenord",
-  "field-is-required": "{{field}} är obligatoriskt."
+  "field-is-required": "{{field}} är obligatoriskt.",
+  "events-main-title": "Här hittar du alla våra evenemang",
+  "events-link": "Evenemang"
 }

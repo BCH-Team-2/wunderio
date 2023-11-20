@@ -1,0 +1,18 @@
+uuid: f730e05c-b412-4be4-8db5-88a789646883
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: "This content type can be used to store information about the event (or the main event in a case where there are some additional side events/workshops).\r\n"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

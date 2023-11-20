@@ -1,0 +1,11 @@
+uuid: fa46dd1b-43a6-47fc-a38b-4e067b69e448
+langcode: en
+status: true
+dependencies: {  }
+id: type
+label: Type
+category: Type
+likert: false
+options: |-
+  Careers: Careers
+  Events: Events

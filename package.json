@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@hookform/error-message": "^2.0.1",
+    "nextjs-drupal-webform": "^1.1.1"
+  }
+}

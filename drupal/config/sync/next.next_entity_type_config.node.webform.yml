@@ -1,0 +1,9 @@
+uuid: 06eb242c-f412-4a92-b4f7-33a3fcb66649
+langcode: en
+status: true
+dependencies: {  }
+id: node.webform
+site_resolver: ''
+configuration: {  }
+revalidator: ''
+revalidator_configuration: {  }

@@ -1,0 +1,10 @@
+uuid: 4a7a90b3-b9ed-49cf-afc9-5adbc7fdf0c3
+langcode: en
+status: true
+dependencies: {  }
+id: photos
+label: Photos
+icon_uuid: null
+icon_default: null
+description: "Photo module for posting news about events, awards, WunderCon, and interesting numbers.\r\n\r\n"
+behavior_plugins: {  }

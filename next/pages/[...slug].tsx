@@ -22,7 +22,6 @@ import {
 } from "@/lib/zod/article";
 import { Page as PageType, validateAndCleanupPage } from "@/lib/zod/page";
 
-
 const RESOURCE_TYPES = ["node--article", "node--page"];
 
 export default function CustomPage({
@@ -82,7 +81,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async (context) => {
       },
     };
   }
-  const apiParams = getNodePageJsonApiParams(type).getQueryObject()
+  const apiParams = getNodePageJsonApiParams(type).getQueryObject();
 
   const resource = await drupal.getResourceFromContext<DrupalNode>(
     path,
@@ -117,7 +116,7 @@ export const getStaticProps: GetStaticProps<PageProps> = async (context) => {
     type === "node--article"
       ? validateAndCleanupArticle(resource)
       : type === "node--page"
-        ? validateAndCleanupPage(resource)
+      ? validateAndCleanupPage(resource)
       : null;
 
   return {

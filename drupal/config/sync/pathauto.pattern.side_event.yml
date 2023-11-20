@@ -1,0 +1,22 @@
+uuid: bf7c8d8f-495f-44bd-88d2-041b0314b99d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: side_event
+label: 'Side event'
+type: 'canonical_entities:node'
+pattern: 'events/[node:field_main_event:entity]/[node:title]'
+selection_criteria:
+  be3a234d-661b-4d5a-a875-83c7aefef16b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: be3a234d-661b-4d5a-a875-83c7aefef16b
+    context_mapping:
+      node: node
+    bundles:
+      side_event: side_event
+selection_logic: and
+weight: -5
+relationships: {  }

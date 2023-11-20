@@ -1,15 +1,12 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
 import { drupal } from "@/lib/drupal/drupal-client";
-import { authOptions } from "./auth/[...nextauth]";
-import { getServerSession } from "next-auth";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
   const languagePrefix = req.headers["accept-language"];
-  const session = await getServerSession(req, res, authOptions);
   try {
     if (req.method === "POST") {
       const url = drupal.buildUrl(`/${languagePrefix}/webform_rest/submit`);
@@ -25,7 +22,6 @@ export default async function handler(
         }),
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${session.accessToken}`,
         },
       });
       if (result.ok) {

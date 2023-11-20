@@ -1,0 +1,11 @@
+uuid: 773398b9-26b5-40d4-9084-9ce94724ab57
+langcode: en
+status: true
+dependencies: {  }
+id: node.event
+site_resolver: site_selector
+configuration:
+  sites:
+    frontend: frontend
+revalidator: ''
+revalidator_configuration: {  }

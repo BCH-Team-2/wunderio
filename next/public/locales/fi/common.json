@@ -1,6 +1,8 @@
 {
   "brand-logos": "Brändilogoja",
   "homepage-link-sr": "Etusivu",
+  "homepage-link": "Etusivu",
+  "careers-link": "Työurat",
   "menu-back": "Takaisin",
   "menu": "Valikko",
   "menu-toggle": "Näytä/piilota valikko",
@@ -79,5 +81,7 @@
   "password-reset-check-your-email": "Jos {{email}} oli liitetty oikeaan tiliin, tarkista sähköpostistasi linkki salasanan vaihtamiseen.",
   "password-updated-login-below": "Salasanasi on päivitetty. Voit kirjautua sisään alla olevalla lomakkeella.",
   "reset-your-password": "Nollaa salasanasi",
-  "field-is-required": "'{{field}}' kenttä on pakollinen"
+  "field-is-required": "'{{field}}' kenttä on pakollinen",
+  "events-main-title": "Täältä löydät kaikki tapahtumamme",
+  "events-link": "Tapahtumat"
 }

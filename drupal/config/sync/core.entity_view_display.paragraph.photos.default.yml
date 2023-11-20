@@ -1,0 +1,52 @@
+uuid: ab00cf89-b8e6-4413-a49e-ce665e0e6a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos.field_1st
+    - field.field.paragraph.photos.field_2nd
+    - field.field.paragraph.photos.field_3rd
+    - field.field.paragraph.photos.field_4th
+    - paragraphs.paragraphs_type.photos
+id: paragraph.photos.default
+targetEntityType: paragraph
+bundle: photos
+mode: default
+content:
+  field_1st:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_2nd:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_3rd:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_4th:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

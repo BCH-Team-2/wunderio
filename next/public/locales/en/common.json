@@ -1,6 +1,7 @@
 {
   "brand-logos": "Brand logos",
   "homepage-link": "Homepage",
+  "careers-link": "Careers",
   "menu-back": "Back",
   "menu": "Menu",
   "menu-toggle": "Toggle menu",
@@ -83,5 +84,7 @@
   "password-updated-login-below": "Your password has been updated. Please log in below.",
   "password-reset-check-your-email": "If {{email}} was associated with a actual account, check your email for a link to reset your password.",
   "reset-your-password": "Reset your password",
-  "field-is-required": "The {{field}} field is required."
+  "field-is-required": "The {{field}} field is required.",
+  "events-main-title": "Here you can find all our events",
+  "events-link": "Events"
 }

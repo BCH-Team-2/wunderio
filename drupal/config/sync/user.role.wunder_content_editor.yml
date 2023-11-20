@@ -9,11 +9,13 @@ dependencies:
     - media.type.remote_video
     - media.type.video
     - node.type.page
+    - rest.resource.webform_rest_submit
   module:
     - content_translation
     - media
     - node
     - path
+    - rest
     - system
     - toolbar
 _core:
@@ -63,6 +65,7 @@ permissions:
   - 'edit own page content'
   - 'edit own remote_video media'
   - 'edit own video media'
+  - 'restful post webform_rest_submit'
   - 'revert all revisions'
   - 'revert page revisions'
   - 'translate audio media'

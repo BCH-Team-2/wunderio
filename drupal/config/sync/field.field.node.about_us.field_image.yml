@@ -6,11 +6,17 @@ dependencies:
     - field.storage.node.field_image
     - node.type.about_us
   module:
+    - content_translation
     - image
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.about_us.field_image
 field_name: field_image
 entity_type: node
@@ -18,7 +24,7 @@ bundle: about_us
 label: Image
 description: Image
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

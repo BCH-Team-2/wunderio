@@ -1,20 +1,19 @@
-import { useTranslation } from "next-i18next"
-import Link from "next/link"
-import { useRouter } from 'next/router'
-import { useEffect, useState } from "react"
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { useEffect, useState } from "react";
 
 export interface BreadcrumbsProps {
   items: {
-    title: string
-    url?: string
-  }[]
+    title: string;
+    url?: string;
+  }[];
 }
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
-
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   if (!items?.length) {
-    return null
+    return null;
   }
 
   return (
@@ -46,5 +45,5 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
         ))}
       </ol>
     </nav>
-  )
+  );
 }

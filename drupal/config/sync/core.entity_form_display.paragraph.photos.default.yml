@@ -1,0 +1,48 @@
+uuid: 1340dbdc-2e39-49b1-9ac5-493686746a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos.field_1st
+    - field.field.paragraph.photos.field_2nd
+    - field.field.paragraph.photos.field_3rd
+    - field.field.paragraph.photos.field_4th
+    - paragraphs.paragraphs_type.photos
+  module:
+    - media_library
+id: paragraph.photos.default
+targetEntityType: paragraph
+bundle: photos
+mode: default
+content:
+  field_1st:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_2nd:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_3rd:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_4th:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -2,9 +2,12 @@ uuid: cdde3d87-907c-4a64-bede-812b1583a0be
 langcode: en
 status: true
 dependencies:
+  config:
+    - rest.resource.webform_rest_submit
   module:
     - media
     - node
+    - rest
     - subrequests
 _core:
   default_config_hash: D-thmsN09HWkilJq0monV8u7HvP8B8hW7lF9nKmY3OY
@@ -16,5 +19,6 @@ permissions:
   - 'access user profiles'
   - 'bypass node access'
   - 'issue subrequests'
+  - 'restful post webform_rest_submit'
   - 'view all media revisions'
   - 'view all revisions'

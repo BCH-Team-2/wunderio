@@ -1,0 +1,12 @@
+uuid: 2d3f7dba-7c2d-496f-b6b8-9b077a9e5e3b
+langcode: en
+status: true
+dependencies: {  }
+id: node.side_event
+site_resolver: site_selector
+configuration:
+  sites:
+    frontend: frontend
+  field_name: {  }
+revalidator: ''
+revalidator_configuration: {  }

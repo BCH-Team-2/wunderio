@@ -3,9 +3,9 @@ import { z } from "zod";
 
 import { MetatagsSchema } from "@/lib/zod/metatag";
 import {
-  TestimonialsSchema,
-  HeadingSectionSchema,
   FormattedTextSchema,
+  HeadingSectionSchema,
+  TestimonialsSchema,
 } from "@/lib/zod/paragraph";
 
 const CareersElementsSchema = z.discriminatedUnion("type", [
@@ -34,13 +34,10 @@ const BasicInfoSchema = z.object({
 
 export function validateAndCleanupCareers(careers: DrupalNode): Careers | null {
   try {
-    // Validate the top level fields first.
     const topLevelCareersData = CareersSchema.omit({
       field_content_elements: true,
     }).parse(careers);
 
-    // Validate the field_content_elements separately, one by one.
-    // This way, if one of them is invalid, we can still return the rest of the page contents.
     const validatedParagraphs = careers.field_content_elements
       .map((paragraph: any) => {
         const result = CareersElementsSchema.safeParse(paragraph);

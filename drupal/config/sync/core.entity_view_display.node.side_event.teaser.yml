@@ -1,0 +1,35 @@
+uuid: b256a74c-7d16-4bab-bc28-9d2fe4d33cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.side_event.body
+    - field.field.node.side_event.field_content_elements
+    - field.field.node.side_event.field_main_event
+    - node.type.side_event
+  module:
+    - text
+    - user
+id: node.side_event.teaser
+targetEntityType: node
+bundle: side_event
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_content_elements: true
+  field_main_event: true
+  langcode: true

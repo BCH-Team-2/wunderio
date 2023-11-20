@@ -1,0 +1,34 @@
+uuid: 3fba2ee8-c3dd-4d15-9932-b254b58b28f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_3rd
+    - media.type.image
+    - paragraphs.paragraphs_type.photos
+  module:
+    - tmgmt_content
+third_party_settings:
+  tmgmt_content:
+    excluded: false
+id: paragraph.photos.field_3rd
+field_name: field_3rd
+entity_type: paragraph
+bundle: photos
+label: 3rd
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
