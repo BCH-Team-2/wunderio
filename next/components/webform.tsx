@@ -9,7 +9,6 @@ import { Webform } from '@/lib/zod/webform'
 import { validateAndCleanupWebformSubmissionList } from '@/lib/zod/webform-submission-list'
 
 import { AuthGate } from './auth-gate'
-
 import { Button } from '@/ui/button'
 import { Input } from '@/ui/input'
 import { Label } from '@/ui/label'
